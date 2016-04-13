@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1565C0;
+    text-align: center;
+    color:white;
+}
+h3{
+    font-weight: 200;
+    font-size: 50px;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 60px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.btn{
+    height: 50px;
+    padding: 10px 30px;
+    background-color: #FF5722;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 5px solid white;
+    color:white;
+}
+
+.link{
+    text-decoration: underline;
+    color: white;
+}
+
+.icon_fb{
+    width: 21px;
+    margin-top: 10px;
+}
+
+#tela_inicial{
+    margin-top: 15%;
+}
+#tela_inicial p{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    color: black;
+}
+#tela_inicial .btn{
+    background-color: #3b5998;
+}
+
+#tela_meio{
+    display: none;
+    margin-top: 8%;
+}
+#tela_meio .text_input{
+    margin-bottom: 60px;
+    margin-top: 30px;
+    font-size: 40px;
+    padding: 3px;
+    border-radius: 5px;
+    border: 5px solid #448AFF;
+    background-color: #64B5F6;
+    color: white;
+    text-align: center;
+}
+#tela_meio .area_imagem_circular{
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    margin: 0 auto;
+    border-radius: 80px;
+}
+
+#tela_partilhar{
+    display: none;
+    margin-top: 10%;
+}
+#tela_partilhar h3{
+    font-size: 80px;
+    text-shadow: 0px 0px 5px black;
+}
+#tela_partilhar .xlarge{
+    text-shadow: 0px 0px 5px white;
+    color: black;
+    margin-bottom: 40px
+}
+
+#tela_partilhar .btn{
+    background-color: #3b5998;
+}
+
+#tela_partilhar .tentar{
+    margin-top: 40px;
+}

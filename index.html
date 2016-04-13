@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>O que eu sou!</title>
+    <link href="recursos/estilos/estilo.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- Tela inicial em que o utilizador será requisitado a efectuar a sua autenticação com o facebook -->
+    <div id="tela_inicial">
+
+        <h3>Descubra qual elogio se adequa mais a si!</h3>
+
+        <p>Primeiro faça o login com a sua conta do facebook</p>
+
+        <a class="btn" href="javascript:autenticarComFb()"><img class="icon_fb" src="recursos/imagens/facebook-box.png"> Autenticar-me</a>
+
+    </div>
+
+    <div id="tela_meio">
+
+        <div class="area_imagem_circular"></div><br/>
+
+        <h1>Confirme o seu nome</h1>
+
+        <input id="text_nome" type="text" class="text_input"/>
+
+        <p><a class="btn" href="javascript:confirmarNome()">Confirmar</a></p>
+
+    </div>
+
+    <div id="tela_partilhar">
+        <h1>Parabêns</h1>
+        <h3 id="novo_nome"></h3>
+        <p>Você é:</p>
+        <h1 class="xlarge" id="elogio"></h1>
+
+        <a class="btn" href="javascript:autenticarComFb()"><img class="icon_fb" src="recursos/imagens/facebook-box.png"> Partilhar</a>
+
+        <p class="tentar"><a class="link" href="javascript:tentarNovamente()">Tentar Novamente</a></p>
+        <h1>&nbsp;</h1>
+    </div>
+
+    <!-- Codigo para ler o SDK do facebook -->
+    <script>
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Ficheiro javascript principal -->
+    <script src="recursos/javascript/script.js"></script>
+
+</body>
+</html>
