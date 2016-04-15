@@ -130,7 +130,14 @@ function confirmarNome(){
 //partilhar no facebook
 function partilharNoFacebook(){
 
+    FB.ui({
+        method: 'share',
+        href: 'https://web.co.mz/apps/fbapp_01/partilhar/?nome='+todoNome+'&e='+nomeDoElogio,
+    }, function(response){
 
+        alert('Obrigado por partilhar. Até breve"');
+
+    });
 
 }
 
